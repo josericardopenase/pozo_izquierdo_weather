@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-800 text-white flex justify-center">
+  <div class="max-w-[800px] mb-4">
+    <div style="width: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      <h1 class="text-3xl font-bold my-3 mt-12">Pozo izquierdo</h1>
+      <h1 class="text-2xl font-bold my-0" id="time"></h1>
+      <div class="w-full text-left flex flex-col py-3">
+        <p class="font-semibold">Legend:</p>
+        <div class="flex my-2 items-center gap-5">
+          <div class="flex items-center gap-3">
+            <div class="font-semibold w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-r-[30px] border-r-green-500"></div>
+            Wind direction
+          </div>
+          <div class="flex gap-3 items-center">
+            <div class="h-[10px] w-[10px] bg-green-500 rounded-full">
+            </div>
+            Low Wind (5 knots)
+
+          </div>
+          <div class="flex gap-3 items-center">
+            <div class="h-[10px] w-[10px] bg-orange-500 rounded-full">
+            </div>
+            Mid Wind (10 knots)
+          </div>
+          <div class="flex gap-3 items-center">
+            <div class="h-[10px] w-[10px] bg-red-500 rounded-full">
+            </div>
+            High Wind (20 knots)
+
+          </div>
+        </div>
+        <div class="flex items-center gap-3 pb-2">
+          <div class="h-[15px] w-[15px] bg-red-500 rounded-full">
+          </div>
+          <p>Beach entry points</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="public/shop_white.png" width="23">
+          <p>Windsurf shops</p>
+        </div>
+      </div>
+      <div id="app" style="width: 800px; height: 600px; border-radius: 20px; overflow: hidden;"></div>
+    </div>
+  </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
