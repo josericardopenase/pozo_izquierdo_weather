@@ -109,7 +109,7 @@ drawEntryPoint(new THREE.Vector3(-1, -1, 0));
 
 let current_direction = 0;
 let arrows: Mesh[] = [];
-const title = document.getElementById("time");
+const title = document.getElementById("time") as HTMLElement;
 
 async function init() {
     const weather = await getWeather();
@@ -117,6 +117,7 @@ async function init() {
         arrows.forEach(arrow => { arrow.visible = false; });
         mapImageRenderer.render(scene, "map.png", 4, 4);
         const curr = current_direction++;
+        title.innerHTML = String(weather.hourly.time[curr])
         arrows = drawArrows(
             weather.hourly.wind_direction_10m[curr],
             weather.hourly.wind_speed_10m[curr]
