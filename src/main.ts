@@ -110,6 +110,7 @@ drawEntryPoint(new THREE.Vector3(-1, -1, 0));
 let current_direction = 0;
 let arrows: Mesh[] = [];
 const title = document.getElementById("time") as HTMLElement;
+const wind = document.getElementById("wind") as HTMLElement;
 
 async function init() {
     const weather = await getWeather();
@@ -118,6 +119,7 @@ async function init() {
         mapImageRenderer.render(scene, "map.png", 4, 4);
         const curr = current_direction++;
         title.innerHTML = String(weather.hourly.time[curr])
+        wind.innerHTML = "Wind Speed: " + String(weather.hourly.wind_speed_10m[curr]) + "knots,  Wind Direction: " + String(weather.hourly.wind_direction_10m[curr]) + "degrees"
         arrows = drawArrows(
             weather.hourly.wind_direction_10m[curr],
             weather.hourly.wind_speed_10m[curr]
