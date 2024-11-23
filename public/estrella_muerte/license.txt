@@ -1,0 +1,11 @@
+Model Information:
+* title:	Star Wars - Estrella Muerte
+* source:	https://sketchfab.com/3d-models/star-wars-estrella-muerte-3c1a559bbff14ad9b47449a7b49fa2c6
+* author:	albertomarun (https://sketchfab.com/albertomarun)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Star Wars - Estrella Muerte" (https://sketchfab.com/3d-models/star-wars-estrella-muerte-3c1a559bbff14ad9b47449a7b49fa2c6) by albertomarun (https://sketchfab.com/albertomarun) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
